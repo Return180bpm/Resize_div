@@ -1,0 +1,48 @@
+body {
+  background-color: #445533;
+}
+
+img {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    pointer-events: none;
+    user-select: none;
+}
+
+#container {
+  height: 400px;
+  width: 600px;
+  border: 50px solid #223311;
+  position: relative;
+  left: 300px;
+  top: 50px;
+  margin-bottom: 100px
+}
+
+#bottom-img {
+  position: absolute;
+}
+
+
+#top-img {
+  position: absolute;
+  overflow: hidden;
+  width: 300px;
+}
+
+#slider {
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  background: lightblue;
+  left: 50%;
+  margin: 0 0 0 0;
+  transition: all 2s;
+  transition-property: background-color, opacity;
+}
+
+#slider:active {
+  background-color: #5555bb;
+  opacity: 0.3;
+}
